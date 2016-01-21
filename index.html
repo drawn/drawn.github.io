@@ -487,7 +487,11 @@
         $(document).ready(function(){
             $.jribbble.setToken('8f75123574dbfa822cf5c51d5d383b473388aafec11634be0f33b357d2cce66b');
 
-            $.jribbble.shots().then(function(res) {
+            $.jribbble.shots('drawn', {
+              'per_page': 36,
+              'timeframe': 'month',
+              'sort': 'views'
+            }).then(function(res) {
               var html = [];
               res.forEach(function(shot) {
                 html.push('<li class="shots--shot">');
