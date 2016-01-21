@@ -32,30 +32,6 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-    <script src="/js/jribbble.min.js"></script>
-
-    <script>
-        $(document).ready(function(){
-            $.jribbble.setToken('395f874ac79494a93ab5a802236ce6ae378f0c67dec7a0056a01096a6cd7a459');
-
-            $.jribbble.shots('debuts', {
-              'per_page': 36,
-              'timeframe': 'month',
-              'sort': 'views'
-            }).then(function(res) {
-              var html = [];
-              res.forEach(function(shot) {
-                html.push('<li class="shots--shot">');
-                html.push('<a href="' + shot.html_url + '" target="_blank">');
-                html.push('<img src="' + shot.images.normal + '">');
-                html.push('</a></li>');
-              });
-
-              $('.shots').html(html.join(''));
-            });
-        });
-    </script>
 </head>
 
 <body id="page-top" class="index">
@@ -481,6 +457,30 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
+
+    <script src="/js/jribbble.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $.jribbble.setToken('395f874ac79494a93ab5a802236ce6ae378f0c67dec7a0056a01096a6cd7a459');
+
+            $.jribbble.shots('debuts', {
+              'per_page': 36,
+              'timeframe': 'month',
+              'sort': 'views'
+            }).then(function(res) {
+              var html = [];
+              res.forEach(function(shot) {
+                html.push('<li class="shots--shot">');
+                html.push('<a href="' + shot.html_url + '" target="_blank">');
+                html.push('<img src="' + shot.images.normal + '">');
+                html.push('</a></li>');
+              });
+
+              $('.shots').html(html.join(''));
+            });
+        });
+    </script>
 
 </body>
 
