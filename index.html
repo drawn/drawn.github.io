@@ -33,8 +33,28 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <script src="/js/jribbble.min.js"></script>
+
     <script>
-        console.log('Test 1');
+        $(document).ready(function(){
+            $.jribbble.setToken('395f874ac79494a93ab5a802236ce6ae378f0c67dec7a0056a01096a6cd7a459');
+
+            $.jribbble.shots('debuts', {
+              'per_page': 36,
+              'timeframe': 'month',
+              'sort': 'views'
+            }).then(function(res) {
+              var html = [];
+              res.forEach(function(shot) {
+                html.push('<li class="shots--shot">');
+                html.push('<a href="' + shot.html_url + '" target="_blank">');
+                html.push('<img src="' + shot.images.normal + '">');
+                html.push('</a></li>');
+              });
+
+              $('.shots').html(html.join(''));
+            });
+        });
     </script>
 </head>
 
@@ -131,14 +151,15 @@
     <!-- Portfolio Grid Section -->
     <section id="portfolio" class="bg-light-gray">
 
-   <div class="container">
+       <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Portfolio</h2>
                     <h3 class="section-subheading text-muted">My latest Dribbble shots.</h3>
                 </div>
             </div>
-            <div class="row">
+           <ul class="shots"></ul>
+            <div class="row" style="display: none;">
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -223,8 +244,11 @@
                         <p class="text-muted">Website Design</p>
                     </div>
                 </div>
-            </div><div align="center"><a href="https://dribbble.com/drawn" target="_blank"" class="page-scroll btn btn-xl1">Show Me More</a></div>
-        </div>
+            </div>
+            <div align="center">
+                <a href="https://dribbble.com/drawn" target="_blank"" class="page-scroll btn btn-xl1">Show Me More</a>
+            </div>
+       </div>
     </section>
 
     
