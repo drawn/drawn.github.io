@@ -72,7 +72,7 @@ h1,h2,h3,h4,h5,h6{
 .navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus{color:#fff;background-color:#40c9f4}
 @media (max-width:768px){
 	header {
-		background: #333;
+	background-color: #08789B;
 	}
 }
 @media (min-width:768px){.navbar-default{background-color:transparent;padding:5px 0;-webkit-transition:padding .3s;-moz-transition:padding .3s;transition:padding .3s;border:0}.navbar-default .navbar-brand{font-size:2em;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s}
