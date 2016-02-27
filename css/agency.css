@@ -74,6 +74,10 @@ h1,h2,h3,h4,h5,h6{
 	header {
 	background-color: #08789B;
 	}
+	.cont {
+	background-color: #08789B;
+	color:#fff;
+	}
 }
 @media (min-width:768px){.navbar-default{background-color:transparent;padding:5px 0;-webkit-transition:padding .3s;-moz-transition:padding .3s;transition:padding .3s;border:0}.navbar-default .navbar-brand{font-size:2em;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s}
 
