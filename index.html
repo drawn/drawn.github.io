@@ -8,11 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
+        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->    
     <title>Andrey Pavlychev - 2D/UI Artist</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/agency.css" rel="stylesheet">
@@ -31,46 +31,10 @@
 
 <body id="page-top" class="index">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Andrey Pavlychev</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Shots</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contacts</a>
-                    </li>
-                    <li>
-                        <a href="img/Resume_Andrey_Pavlychev_UI_Artist.pdf" target="_blank" ><img src="svg/cv.svg" class="icon-cv" alt="Resume"><font color="#10bbf1">Download Resume</font></a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <!-- Header -->
+	<!-- Wrapper -->
+			<div id="wrapper">
+            
+    <section class="module parallax parallax-1">
     <header>
         <div class="container">
             <div class="intro-text">
@@ -79,56 +43,75 @@
                   <h2><div class="maintext">I'm a 2D/UI Artist with passion for vector graphics and animation, specializing in artwork production for mobile and social network games. Please feel free <a href="mailto:drawn.loves.you@gmail.com?subject=Hello!">to get in touch</a>.</div></h2>
                   <p>&nbsp;</p>
                 </div>
-                <div align="center"><a href="#services" class="page-scroll btn btn-xl">Find Out More</a></div>
+                <div align="center"><a href="#portfolio" class="page-scroll btn btn-xl">Find Out More</a></div>
             </div>
         </div>
     </header>
-
-    <!-- Services Section -->
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Services</h2>
-                    <h3 class="section-subheading text-muted"></h3>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-4"><img src="svg/icon-ui.svg" width="128" height="128" alt="UI Design">
-                    <h4 class="service-heading">UI Design</h4>
-                    <p class="text-muted">I love to create simple and clear design for web and mobile games and applications, however, I am qualified in detailed assets as well.</p>
-                </div>
-                <div class="col-md-4"><img src="svg/icon-icons.svg" width="128" height="128" alt="Icon Design">
-                    <h4 class="service-heading">Icon Design</h4>
-                    <p class="text-muted">I've created a wide variety of icons and I'm ready to figure out the most suitable solution for you. I enjoy designing any kind of icons.</p>
-                </div>
-                <div class="col-md-4"><img src="svg/icon-illustration.svg" width="128" height="128" alt="Illustration">
-                    <h4 class="service-heading">Illustration</h4>
-                    <p class="text-muted">With my 2D digital drawing skills in Photoshop, Illustrator and Flash I will deliver the result that will represent your goals and ideas.</p>
-                </div>
-            </div>
-        </div>
     </section>
 
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio" class="bg-light-gray">
-
-       <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">My recent Dribbble shots</h2>
-                    <h3 class="section-subheading text-muted"></h3>
-                </div>
-            </div>
-           <ul class="shots"></ul>
-           
-       </div>
-       <br>
-       <br>
-        <div align="center">
-            <a href="https://dribbble.com/drawn" target="_blank" class="page-scroll btn btn-xl1"><img src="svg/new-window.svg" class="bicon" alt="open in new window">Show Me More</a>
-        </div>
-    </section>
+	    <!-- Portfolio Section -->
+					  <section id="portfolio"><div id="main">
+						<article class="thumb">
+							<a href="images/fulls/01.jpg" class="image"><img src="images/thumbs/01.jpg" alt="" /></a>
+							<h2 class="popup">Game Backgrounds</h2>
+							<p>Background series were drawn for iOS game on freelance basis</p>
+						</article>
+						<article class="thumb">
+							<a href="images/fulls/02.jpg" class="image"><img src="images/thumbs/02.jpg" alt="" /></a>
+							<h2 class="popup">Game Art</h2>
+							<p>Background and User Interface assets for iOS game</p>
+						</article>
+						<article class="thumb">
+							<a href="images/fulls/03.jpg" class="image"><img src="images/thumbs/03.jpg" alt="" /></a>
+							<h2 class="popup">Application Design</h2>
+							<p>iOS Game Application design. Wireframes and user flow</p>
+						</article>
+						<article class="thumb">
+							<a href="images/fulls/04.jpg" class="image"><img src="images/thumbs/04.jpg" alt="" /></a>
+							<h2 class="popup">Power Up Icons</h2>
+							<p>Power Up Icons for iOS game</p>
+						</article>
+						<article class="thumb">
+							<a href="images/fulls/05.jpg" class="image"><img src="images/thumbs/05.jpg" alt="" /></a>
+							<h2 class="popup">Game Assets</h2>
+							<p>Game objects and UI for iOS game</p>
+						</article>
+						<article class="thumb">
+							<a href="images/fulls/06.jpg" class="image"><img src="images/thumbs/06.jpg" alt="" /></a>
+							<h2 class="popup">Icon Design</h2>
+							<p>A variety of icons for a range of social and mobile games</p>
+						</article>
+						<article class="thumb">
+							<a href="images/fulls/07.jpg" class="image"><img src="images/thumbs/07.jpg" alt="" /></a>
+							<h2 class="popup">Game Assets</h2>
+							<p>Game objects and UI for Social Network game</p>
+						</article>
+						<article class="thumb">
+							<a href="images/fulls/08.jpg" class="image"><img src="images/thumbs/08.jpg" alt="" /></a>
+							<h2 class="popup">User Interface</h2>
+							<p>User Interface for Social Network game</p>
+						</article>
+						<article class="thumb">
+							<a href="images/fulls/09.jpg" class="image"><img src="images/thumbs/09.jpg" alt="" /></a>
+							<h2 class="popup">User Interface</h2>
+							<p>User Interface for browser MMORPG</p>
+						</article>
+						<article class="thumb">
+							<a href="images/fulls/10.jpg" class="image"><img src="images/thumbs/10.jpg" alt="" /></a>
+							<h2 class="popup">User Interface</h2>
+							<p>User Interface and icons for iOS game</p>
+						</article>
+						<article class="thumb">
+							<a href="images/fulls/11.jpg" class="image"><img src="images/thumbs/11.jpg" alt="" /></a>
+							<h2 class="popup">Application Icon</h2>
+							<p>Pixel perfect app icon in all iOS application's sizes</p>
+						</article>
+						<article class="thumb">
+							<a href="images/fulls/12.jpg" class="image"><img src="images/thumbs/12.jpg" alt="" /></a>
+							<h2 class="popup">Logo Design</h2>
+							<p>Game Logos done in vector</p>
+						</article>
+					</div></section>
     
     <!-- Contact Section -->
     <section id="contact">
@@ -136,37 +119,32 @@
             <div class="cont"><div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Thanks for watching!</h2><br>
-                    <h2><div class="maintext">Designing artwork for games is my greatest passion and I always do my best to create high quality products. I'm currently available for everyone who is looking for 2D Assets for games, icon and application design. Portfolio available upon request. Just <a href="mailto:drawn.loves.you@gmail.com?subject=Hello!"><font style="background-color:#FFFFFF">drop me a line</font></a>.<br>Also you can grab my <a href="img/Resume_Andrey_Pavlychev_UI_Artist.pdf" target="_blank"><font style="background-color:#FFFFFF">Resume</font></a> and check out my social network profiles below.</div></h2><br>
+                    <h2><div class="maintext">Designing artwork for games is my greatest passion and I always do my best to create high quality products. I'm currently available for everyone who is looking for 2D Assets for games, icon or application design. Extended portfolio available upon request. <br>Just <a href="mailto:drawn.loves.you@gmail.com?subject=Hello!">drop me a line</a> and I will figure out the most suitable solution for your goals.<br>Also you can grab my <a href="img/Resume_Andrey_Pavlychev_UI_Artist.pdf" target="_blank">Resume</a> and check out my social network profiles below.</div></h2><br>
                     
                     <ul class="social">
 			<li class="link-resume">
 				<a href="img/Resume_Andrey_Pavlychev_UI_Artist.pdf" target="_blank">
-					<img src="svg/cv-white.svg" width="64" height="64" alt="Dribbble">
-					Resume
+					<img src="svg/cv-white.svg" width="64" height="64" alt="Dribbble">Resume
 				</a>
 			</li>
             <li class="link-dribbble">
 				<a href="http://dribbble.com/drawn" target="_blank">
-					<img src="svg/social-dribbble.svg" width="64" height="64" alt="Dribbble">
-					Dribbble
+					<img src="svg/social-dribbble.svg" width="64" height="64" alt="Dribbble">Dribbble
 				</a>
 			</li>
 			<li class="link-in">
-				<a href="https://www.linkedin.com/in/andrey-pavlychev-82549149" target="_blank">
-					<img src="svg/social-linkedin.svg" width="64" height="64" alt="LinkedIn">
-					LinkedIn
+				<a href="https://th.linkedin.com/in/drawnpro" target="_blank">
+					<img src="svg/social-linkedin.svg" width="64" height="64" alt="LinkedIn">LinkedIn
 				</a>
 			</li>
 			<li class="link-instagram">
 				<a href="http://instagram.com/drawn" target="_blank">
-					<img src="svg/social-instagram.svg" width="64" height="64" alt="Instagram">
-					Instagram
+					<img src="svg/social-instagram.svg" width="64" height="64" alt="Instagram">Instagram
 				</a>
 			</li>
 			<li class="link-facebook" target="_blank">
 				<a href="https://www.facebook.com/andrey.pavlychev" target="_blank">
-					<img src="svg/social-facebook.svg" width="64" height="64" alt="Facebook">
-					Facebook
+					<img src="svg/social-facebook.svg" width="64" height="64" alt="Facebook">Facebook
 				</a>
 			</li>
 
@@ -181,7 +159,15 @@
         <div class="container">
             <p class="text-muted">&copy; 2016 <a href="mailto:drawn.loves.you@gmail.com?subject=Hello!">Andrey Pavlychev</a></p>
         </div>
-    </footer>
+    </footer></div>
+
+	<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -200,48 +186,13 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
+    
+        <!-- js -->
+<script src="js/demo.js"></script>
 
-    <style>
-        .shots,
-        .attachments {
-          list-style: none;
-          padding: 0;
-        }
-        .shots li,
-        .attachments li {
-          float: left;
-          width: 25%;
-          padding:1px
-        }
-        .shots img,
-        .attachments img {
-          display: block;
-          width: 100%;
-        }
-        .shots a,
-        .attachments a {
-          display: block;
-        }
-        
-    </style>
-    <script src="js/jribbble.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $.jribbble.setToken('8f75123574dbfa822cf5c51d5d383b473388aafec11634be0f33b357d2cce66b');
+<!-- ads -->
+<script src="js/fusionad.js"></script>
 
-            $.jribbble.users('drawn').shots().then(function(res) {
-              var html = [];
-              res.forEach(function(shot) {
-                html.push('<li class="shots--shot">');
-                html.push('<a href="' + shot.html_url + '" target="_blank">');
-                html.push('<img src="' + shot.images.normal + '">');
-                html.push('</a></li>');
-              });
-
-              $('.shots').html(html.join(''));
-            });
-        });
-    </script>
     
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
