@@ -2,129 +2,17 @@ html,
 body,
 div,
 ul,
-ol,
 li,
-dl,
-dt,
-dd,
-h1,
 h2,
-h3,
-h4,
 h5,
-h6,
-pre,
-form,
-dfn,
-del,
 p,
-blockquote,
-fieldset,
-input,
-textarea,
-select,
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section,
-button,
-canvas,
-video {
+footer {
     font-family: 'Signika', sans-serif;
     font-weight: normal;
     font-style: normal;
     margin: 0;
     padding: 0;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-code,
-address,
-caption,
-cite,
-code,
-th,
-dfn,
-del {
-    font-weight: normal;
-    font-style: normal;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-nav,
-section,
-.clearfix {
-    display: block
-}
-
-a > img {
-    vertical-align: bottom
-}
-
-strong,
-.strong,
-b {
-    font-weight: bold
-}
-
-del,
-.del {
-    text-decoration: line-through
-}
-
-img {
-    max-width: 100%;
-    width: auto;
-    height: auto;
-}
-
-/* tools --------------------------  */
-
-.clear {
-    clear: both;
-    display: block;
-    line-height: 0;
-    height: 0;
-    font-size: 0;
-}
-
-.align-left {
-    float: left !important
-}
-
-.align-right {
-    float: right !important
-}
-
-.overflow-hidden {
-    overflow: hidden;
-    display: block;
-}
-
-/* common --------------------------  */
 
 html {
     height: 100%;
@@ -133,7 +21,7 @@ html {
 
 body {
     height: 100%;
-    font: 20px/36px /*"Helvetica Neue", Helvetica, Arial, sans-serif*/;
+    font: 24px/30px 'Signika', "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #fdedc5;
     -webkit-font-smoothing: antialiased;
     -webkit-backface-visibility: hidden;
@@ -141,19 +29,21 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
-.main {
-    min-height: 100%;
-    overflow: hidden;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+h2 {
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 10px;
+	text-align: center;
 }
 
-.wrap {
-    margin: 0 auto;
-    padding: 0 15px;
-    max-width: 80%;
+img {
+    max-width: 100%;
+	max-height: 100%;
+    width: auto;
+    height: auto;
 }
+
+/* links --------------------------  */
 
 a {
     color: #d2434a;
@@ -172,89 +62,28 @@ a:active {
 	text-decoration: underline;
 }
 
-/* header --------------------------  */
-
-header {
-    padding: 30%;
-    background: url(../images/promo-bg.png) no-repeat center center fixed;;
-    background-size:100%;
-    color: #0D0708;
+a:visited {
+    color: grey;
+	text-decoration: underline;
 }
 
-header h1 {
-    font-size: 50px;
-    line-height: 60px;
-    font-weight: 500;
-    margin-bottom: 38px;
-}
-
-h2 {
-    font-size: 40px;
-    line-height: 60px;
-    font-weight: 500;
-    margin-bottom: 38px;
-	text-align: center;
-}
-
-header h1 span {
-    font-weight: 200
-}
-
-.header-img {
-    float: right
-}
-
-.header-wrapper {
-    padding-top: 87px;
-    max-width: 655px;
-}
-
-.border {
-  padding: 40px;
-  margin: 0 auto;
-  background-color: #0D0708;
-  border-image-source: url(http://tympanus.net/codrops-playground/assets/images/cssref/properties/border-image-slice/border-img.png);
-  border-image-repeat: round;
-  border-image-width: 27px;
-  /* try adding/removing the `fill` keyword to see how that affects the middle slice of the image and its application as a background image */
-  /* also change the value of the slice sizes, use one-value, two-value, three-value, and four-value syntax
-  to get a clearer idea of how they work */
-  border-image-slice: 27;
-}
-
-/* footer --------------------------  */
-
-footer {
-    background: #0D0708;
-    color: white;
-    font-size: 16px;
-    line-height: 28px;
-    padding: 90px 0;
-    text-align: center;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-/* home --------------------------  */
-
-/* content --------------------------  */
+/* navigation --------------------------  */
 
 .menu ul {
     list-style-type: none;
+	font-size: 20px;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #D2424A;
 	max-width: 80%;
 	display: block;
     margin-left: auto;
-    margin-right: auto 
+    margin-right: auto;
 }
 
 .menu li {
     float: left;
-	
-    border-right: 1px solid black;
+	border-right: 1px solid black;
 }
 
 .menu li a {
@@ -266,43 +95,102 @@ footer {
 }
 
 .menu li a:hover {
-    background-color: #111;
+    background-color: #742329;
 }
 
-.spanning {
-    clear: both
+/* sections --------------------------  */
+
+section,
+.clearfix {
+    display: block;
 }
 
-.promo {
-	padding-top: 64px;
-	padding-right: 0;
-	padding-bottom: 54px;
-	padding-left: 0;
+.token {
+    margin: 10px 0 60px;
+	background: url(../images/script.jpg) no-repeat;
+	-moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-.promo-wrapper {
-    margin: 0 -15px
+.activities {
+    margin: 10px 0 60px;
+}
+
+.activities-columns {
+    margin: 0 -25px;
+}
+
+.activity {
+    float: left;
+    width: 33.33%;
+    text-align: left;
+    padding: 0 25px;
+    margin: 0 0 50px;
+    box-sizing: border-box;
+}
+
+.features {
+    margin: 10px 0 60px;
+}
+
+.features-columns {
+    margin: 0 -25px;
+}
+
+.feature {
+    float: left;
+    width: 50%;
+	height: 400px;
+    text-align: left;
+    padding: 0 25px;
+    margin: 0 0 50px;
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    padding: 15px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.inventory {
+	float: left;
+    width: 40%;
+}
+
+.content {
+    width: 60%;
+}
+
+.edg {
+	float: left;
+    width: 20%;
+}
+
+.content-edg {
+    width: 80%;
+	color: #0d0708;
 }
 
 .promo-column {
-    padding: 0 15px 60px;
+    padding: 20px;
     float: left;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 25%;
+    width: 50%;
 	
 }
-
-.modes {
-    padding: 0 15px 60px;
-    float: left;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 30%;
-}
-
 
 .promo-column img {
 	display: block;
@@ -310,86 +198,90 @@ footer {
     margin-right: auto 
 }
 
-.promo-column h5 {
-    font: bold 18px/24px /*"Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;*/;
-    text-transform: uppercase;
-    margin-bottom: 12px;
+/* footer --------------------------  */
+
+footer,
+.clearfix {
+    display: block
 }
 
-.simple {
-    padding: 104px 0 89px
-}
-
-.simple-content {
-    float: right;
-    padding-top: 37px;
-    width: 420px;
-}
-
-.simple-content h3 {
-    font: 700 48px/48px /*"Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif*/;
-    text-transform: uppercase;
-    border-bottom: solid 6px #f4f4f4;
-    padding-bottom: 43px;
-    margin-bottom: 43px;
-}
-
-.simple-content ul {
-    margin-bottom: 5px
-}
-
-.simple-content ul li {
-    font-size: 23px;
-    line-height: 32px;
-    font-weight: 300;
-    margin-bottom: 31px;
-}
-
-.simple-content ul li img {
-    float: left;
-    margin-right: 23px;
-}
-
-.simple-content ul li span {
-    display: block;
-    overflow: hidden;
-}
-
-.simple-img {
-    float: left;
-    max-width: 587px;
-    width: 53%;
-}
-
-.simple-img img {
-    display: block;
-    margin: 0 auto;
-}
-
-.discover {
-    padding: 31px 0 25px;
+footer {
     background: #0D0708;
-}
-
-.discover-content {
-    float: right;
-    width: 50%;
-    padding: 77px 97px 50px 15px;
+	font-size: 18px;
+    color: white;
+    line-height: 28px;
+	margin-top: 70px;
+    padding: 20px 0;
+    text-align: center;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+	max-width: 80%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-.discover-img {
+.footer li {
     float: left;
-    width: 50%;
+	border-right: 1px solid black;
 }
 
-.discover-img img {
-    display: block
+.footer li a {
+    display: block;
+    color: #fdedc5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-.discover-img-inside {
-    margin: 0 -40px
+.footer li a:hover {
+    color: white;
+}
+
+/* misc --------------------------  */
+
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    min-height: 100%;
+    overflow: hidden;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.wrap {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 80%;
+}
+
+.title {
+	margin-top: 25px;
+	margin-bottom: 30px;
+    padding: 25px;
+}
+
+.icon img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 25px;
+	width: 180px;
+}
+
+.map img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 25px;
 }
