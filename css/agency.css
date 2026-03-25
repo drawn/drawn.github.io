@@ -464,3 +464,16 @@ section.module.parallax-1 {
     background-position: center center;
     background-attachment: scroll;
 }
+section.module.parallax-1 header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+header .intro-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
