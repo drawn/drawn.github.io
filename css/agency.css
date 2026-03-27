@@ -407,14 +407,13 @@ ul.social li {
     vertical-align: top;
 }
 ul.social li a {
-    display: inline-block;
+    display: block;
     width: 90px;
     height: 70px;
+    text-indent: -9999px;
     border: none;
-    font-size: 14px;
+    font-size: 20px;
     text-align: center;
-    vertical-align: middle;
-    line-height: 70px;
 }
 ul.social li a img {
     display: inline-block;
